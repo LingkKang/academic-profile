@@ -1,7 +1,18 @@
 ---
 permalink: /robots.txt
 ---
+
 User-agent: *
-Disallow:
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /assets/img/
+Disallow: /assets/pdf/
+Disallow: /assets/poster/
+
+User-agent: Bingbot
+Disallow: /assets/img/
+Disallow: /assets/pdf/
+Disallow: /assets/poster/
 
 Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
