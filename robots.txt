@@ -1,4 +1,14 @@
 User-agent: *
-Disallow:
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /assets/img/
+Disallow: /assets/pdf/
+Disallow: /assets/poster/
+
+User-agent: Bingbot
+Disallow: /assets/img/
+Disallow: /assets/pdf/
+Disallow: /assets/poster/
 
 Sitemap: https://lingkkang.github.io/test-profile/sitemap.xml
