@@ -187,11 +187,13 @@
 
     <!-- Links/Buttons -->
     <div class="links">
-      {% if entry.award %}
-        <a class="award btn btn-sm z-depth-0" role="button">
-          {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
-        </a>
-      {% endif %}
+      {% comment %} 
+        {% if entry.award %}
+          <a class="award btn btn-sm z-depth-0" role="button">
+            {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
+          </a>
+        {% endif %} 
+      {% endcomment %}
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
       {% endif %}
@@ -209,6 +211,13 @@
           <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
         {% else %}
           <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+        {% endif %}
+      {% endif %}
+      {% if entry.linkedin %}
+        {% if entry.linkedin contains '://' %}
+          <a href="{{ entry.linkedin }}" class="btn btn-sm z-depth-0" role="button">LinkedIn</a>
+        {% else %}
+          <a href="{{ entry.linkedin | prepend: '/assets/linkedin/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">LinkedIn</a>
         {% endif %}
       {% endif %}
       {% if entry.pdf %}
@@ -240,7 +249,7 @@
         {% if entry.poster contains '://' %}
           <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
         {% else %}
-          <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+          <a href="{{ entry.poster | prepend: '/assets/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
         {% endif %}
       {% endif %}
       {% if entry.slides %}
@@ -274,7 +283,13 @@
       {% if entry.inspirehep_id %}
         {% assign entry_has_inspirehep_badge = true %}
       {% endif %}
-      {% if entry_has_altmetric_badge or entry_has_dimensions_badge or entry_has_google_scholar_badge or entry_has_inspirehep_badge %}
+
+      {% assign entry_has_award_name_badge = false %}
+      {% if entry.award_name %}
+        {% assign entry_has_award_name_badge = true %}
+      {% endif %}
+
+      {% if entry_has_altmetric_badge or entry_has_dimensions_badge or entry_has_google_scholar_badge or entry_has_inspirehep_badge or entry_has_award_name_badge %}
         <div class="badges">
           {% if site.enable_publication_badges.altmetric and entry_has_altmetric_badge %}
             <span
@@ -320,6 +335,17 @@
               <img
                 src="https://img.shields.io/badge/scholar-{% google_scholar_citations site.data.socials.scholar_userid entry.google_scholar_id %}-4285F4?logo=googlescholar&labelColor=beige"
                 alt="{% google_scholar_citations site.data.socials.scholar_userid entry.google_scholar_id %} Google Scholar citations"
+              >
+            </a>
+          {% endif %}
+          {% if site.enable_publication_badges.award_shield and entry_has_award_name_badge %}
+            <a
+              href="assets/{{ entry.award_path }}"
+              target="_blank"
+            >
+              <img
+                src="https://img.shields.io/badge/Award-{{ entry.award_name }}-%23800000?labelColor=%23999999"
+                alt="Award: {{ entry.award_name }}"
               >
             </a>
           {% endif %}
