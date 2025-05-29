@@ -20,16 +20,24 @@
   google_scholar_id = {d1gkVwhDpl0C},
 }
 
-@inproceedings{C2OPU,
+@inproceedings{C2OPU-13EF772C,
   abbr = {FCCM'25},
   title = {C2OPU: Hybrid Compute-in-Memory and Coarse-Grained Reconfigurable Architecture for Overlay Processing of Transformers},
-  author = {Siyuan Miao, and Lingkang Zhu, and Chen Wu, and Shaoqiang Lu, and Ting-Jung Lin, and Lei He},
+  author = {Siyuan Miao, and Lingkang Zhu, and Chen Wu, and Shaoqiang Lu, and Jinming Lyu, and Lei He},
   booktitle = {2025 IEEE 33rd Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM)},
   location = {Fayetteville, Arkansas, USA},
   year = {2025},
+  volume = {},
+  number = {},
+  pages = {273 -- 273},
   month = {May},
   publisher = {IEEE},
+  doi = {10.1109/FCCM62733.2025.00033},
+  abstract = {
+    Transformer-based models have shown huge success in natural language processing (NLP) with increasing model size and attention mechanism. However, this makes Von Neumann architecture based accelerators memory-bound such that the accelerators cannot leverage all the advantages of Transformer-based models. Although computing-in-memory (CIM) processors have emerged to tackle this problem through in-situ computing, the mismatch of computing patterns and low computing precision of CIM make it still challenging to accelerate Transformers. In this paper, we propose C2OPU, a hybrid dual-core processor to accelerate Transformers with hardware and software co-optimization. The dual-core architecture uses CIM arrays to accelerate weight-stationary vector-matrix multiplications, which accounts for the main computation complexity of Transformers. Meanwhile, a coarse-grained reconfigurable architecture (CGRA) is used to address the issues of computing pattern mismatch and low precision of the CIM. In addition, we propose an accuracy-bound workload allocation strategy, which considers non-ideal characteristics in analog computing, to balance throughput and accuracy. Furthermore, C2OPU provides a compiler to automatically determine optimal system configurations when Transformer model changes. Experimental results show that C2OPU achieves an average speedup of 145.41×, 4.73×, 4.70x and 3.85×, and 1.37x compared to CPU, GPU, Science23, Nature23, and VLSI24, respectively, on ten different Transformer models.
+  },
   selected = {true},
+  pdf = {2025-05-C2OPU-13EF772C.pdf},
   bibtex_show = {true},
   poster = {poster/fccm-c2opu-poster.png},
   linkedin = {https://www.linkedin.com/posts/lingkang-zhu_fccm2025-activity-7325366306147360768-lbZU},

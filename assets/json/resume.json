@@ -27,7 +27,7 @@
       "location": "Ningbo, China",
       "url": "https://www.nottingham.edu.cn/",
       "area": "Computer Science",
-      "studyType": "Bsc Computer Science",
+      "studyType": "BSc Hons Computer Scienceo",
       "startDate": "2021-09-01",
       "endDate": "2025-07-01",
       "score": "",
@@ -92,12 +92,12 @@
   "languages": [
     {
       "language": "Chinese",
-      "fluency": "Native speaker",
+      "fluency": "Native",
       "icon": ""
     },
     {
       "language": "English",
-      "fluency": "Fluent",
+      "fluency": "Proficient",
       "icon": ""
     }
   ],
