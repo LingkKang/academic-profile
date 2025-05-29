@@ -51,6 +51,13 @@ ninja.data = [{
           window.open("mailto:%63%6F%6E%74%61%63%74@%6C%69%6E%67%6B%61%6E%67.%64%65%76", "_blank");
         },
       },{
+        id: 'social-ieee',
+        title: 'IEEE Xplore',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://ieeexplore.ieee.org/author/610099147366864/", "_blank");
+        },
+      },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
