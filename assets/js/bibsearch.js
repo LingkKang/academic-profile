@@ -52,6 +52,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const updateInputField = () => {
     const hashValue = decodeURIComponent(window.location.hash.substring(1)); // Remove the '#' character
+
+    // If the hash matches an anchor ID, do not filter
+    const anchorTarget = document.getElementById(hashValue);
+    if (anchorTarget) {
+      // Add a temporary highlight class
+      anchorTarget.classList.add("custom-bib-blink-class");
+
+      setTimeout(() => {
+        anchorTarget.classList.remove("custom-bib-blink-class");
+      }, 4500); // Remove the highlight after 1.5 seconds
+
+      // Let the browser do its normal anchor scrolling behavior
+      return;
+    }
+
+    // Otherwise, treat it as a search term
     document.getElementById("bibsearch").value = hashValue;
     filterItems(hashValue);
   };

@@ -74,6 +74,8 @@
     width: $back-to-top-width;
     z-index: $back-to-top-z-index;
   }
+
+  --custom-bib-blink-color: #ffc170;
 }
 
 html[data-theme="dark"] {
@@ -121,6 +123,8 @@ html[data-theme="dark"] {
   .only-dark {
     display: block;
   }
+
+  --custom-bib-blink-color: #af854e;
 }
 
 html[data-theme-setting="dark"] {
@@ -158,4 +162,13 @@ html[data-theme-setting="light"] {
     padding-top: 12px;
     display: block;
   }
+}
+
+@keyframes custom-bib-blink-animation {
+0%   { background-color: var(--custom-bib-blink-color); }
+100% { background-color: transparent; }
+}
+
+.custom-bib-blink-class {
+  animation: custom-bib-blink-animation 4.5s ease-in-out;
 }
