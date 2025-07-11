@@ -85,7 +85,7 @@
         "- GNU toolchain for debugging & cross-compiling",
         "- Dev containers and virtual machines (Docker, Hyper-V, etc.)",
         "- Cloud servers (Alibaba, Tencent, MS Azure, etc.)",
-        "- SaaS (GitLab, Hexo, Trello, etc.)"
+        "- SaaS (GitLab, Hexo, Trello, Jira, etc.)"
       ]
     }
   ],
