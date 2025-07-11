@@ -2,12 +2,13 @@
 # the commented lines are the default social media links supported by the template
 # the socials will be displayed in the order they are defined here
 
+location: Ningbo, China
 email: contact@lingkang.dev # your email address
+scholar_userid: _-NgiD0AAAAJ # your Google Scholar ID
 linkedin_username: lingkang-zhu # your LinkedIn user name
 github_username: LingkKang # your GitHub user name
 orcid_id: 0009-0006-7919-1103 # your ORCID ID
 research_gate_profile: Lingkang-Zhu # your profile on ResearchGate
-scholar_userid: _-NgiD0AAAAJ # your Google Scholar ID
 
 # ieee_id: 610099147366864 # your ieeexplore.ieee.org/author/id
 # dblp_url: https://dblp.org/pid/407/2250.html # your DBLP profile url

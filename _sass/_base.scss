@@ -1419,3 +1419,22 @@ figure.cover {
     color: #23212d !important;
   }
 }
+
+.url_wrapper {
+  a {
+    color: inherit;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    margin-bottom: 6.5px;
+  }
+
+  i, img {
+    margin-right: 15px;
+    width: 15px;
+  }
+}

@@ -9,9 +9,7 @@ profile:
   image: profile.png # in assets/img/
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Computer Science</p>
-    <p><a href="https://www.nottingham.edu.cn/">University of Nottingham Ningbo China (UNNC)</a></p>
-    <p>#199 Taikang East Road</p>
+    MoreInfo should be empty
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,6 +25,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an undergraduate in Computer Science at the University of Nottingham Ningbo China.
+I am an undergraduate in Computer Science at the <a href="https://www.nottingham.edu.cn/en/">University of Nottingham Ningbo China</a> (UNNC).
 
 I mainly interested in computer architecture, software-hardware co-design, and FPGA4ML.
