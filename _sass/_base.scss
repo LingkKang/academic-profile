@@ -1342,7 +1342,7 @@ ninja-keys::part(ninja-input-wrapper) {
 
 // highlight-search-term
 ::highlight(search) {
-  background-color: var(--global-theme-color);
+  background-color: color-mix(in srgb, var(--global-theme-color) 40%, transparent);
   color: var(--global-text-color);
 }
 
