@@ -23,14 +23,25 @@
   "work": [],
   "education": [
     {
+      "institution": "The Hong Kong Polytechnic University",
+      "location": "Hong Kong SAR, China",
+      "url": "https://www.polyu.edu.hk/",
+      "area": "Electrical and Electronic Engineering",
+      "studyType": "PhD",
+      "startDate": "2025-08-27",
+      "endDate": "present",
+      "score": "",
+      "courses": []
+    },
+    {
       "institution": "University of Nottingham Ningbo China",
       "location": "Ningbo, China",
       "url": "https://www.nottingham.edu.cn/",
       "area": "Computer Science",
-      "studyType": "BSc Hons Computer Scienceo",
+      "studyType": "BSc Hons Computer Science",
       "startDate": "2021-09-01",
       "endDate": "2025-07-01",
-      "score": "",
+      "score": "First Class",
       "courses": []
     },
     {
@@ -41,7 +52,7 @@
       "studyType": "Exchange Student",
       "startDate": "2023-09-01",
       "endDate": "2024-06-01",
-      "score": "",
+      "score": "First Class",
       "courses": []
     }
   ],
