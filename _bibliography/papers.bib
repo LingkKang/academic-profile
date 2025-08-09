@@ -4,7 +4,7 @@
 @inproceedings{SYSgen,
   abbr = {ISEDA'25},
   abstract = {
-    Chiplets are emerging as novel solutions for high-performance AI computing processors. Vertical interconnects (VICs) including µbumps, C4 bumps and through-silicon vias (TSVs) in chiplets are critical as they not only carry signals and power supplies but also transfer heat efficiently. Due to need of fine-grained VIC modeling, existing thermal tools are ineffective for VIC-embedded chiplets. Moreover, electrothermal analysis in previous architectural simulators do not consider temperature dependence for short-circuit power, which is nontrivial in our experiments. To address the above problems, this paper proposes SYSgen, a framework for accurate, location-based temperature-dependent power profiling and VIC planning for integrated chiplets. SYSgen achieves a 97.77× speedup with a maximum error below 1.2°C when the chiplet temperature is around 100°C compared to COMSOL. It also reduces VIC number by 21.7% and 12.4% compared to two existing papers with same constraints on signal and power routing and maximum temperature.
+    Chiplets are emerging as novel solutions for high-performance AI computing processors. Vertical interconnects (VICs) including μbumps, C4 bumps and through-silicon vias (TSVs) in chiplets are critical as they not only carry signals and power supplies but also transfer heat efficiently. Due to the need of fine-grained VIC modeling, existing thermal tools are ineffective for VIC-embedded chiplets. Moreover, electrothermal analysis in previous architectural simulators does not consider temperature dependence for short-circuit power, which is nontrivial in our experiments. To address the above problems, this paper proposes SYSgen, a framework for accurate, location-based temperature-dependent power profiling and VIC planning for integrated chiplets. SYSgen achieves a 97.77× speedup with a maximum error below 1.2°C when the chiplet temperature is around 100°C compared to COMSOL. It also reduces VIC number by 21.7% and 12.4% compared to two existing papers with same constraints on signal and power routing and maximum temperature.
   },
   title = {Electrothermal Simulation and Vertical Interconnect Planning for Integrated Chiplets},
   author = {Siyuan Miao, and Lingkang Zhu, and Wenkai Yang, and Teng Lu, and Yanze Zhou, and Chen Wu, and Zhiping Yu, and Ting-Jung Lin, and Lei He},
@@ -18,6 +18,11 @@
   award_path = {img/awards/ISEDA_Nomination.jpg},
   award_name = {Honorable Mention Paper Award},
   google_scholar_id = {d1gkVwhDpl0C},
+  doi = {10.1109/ISEDA65950.2025.11100500},
+  volume={},
+  number={},
+  pages={705-711},
+  pdf = {2025-05-SYSgen.pdf},
 }
 
 @inproceedings{C2OPU,
@@ -37,7 +42,7 @@
     Transformer-based models have shown huge success in natural language processing (NLP) with increasing model size and attention mechanism. However, this makes Von Neumann architecture based accelerators memory-bound such that the accelerators cannot leverage all the advantages of Transformer-based models. Although computing-in-memory (CIM) processors have emerged to tackle this problem through in-situ computing, the mismatch of computing patterns and low computing precision of CIM make it still challenging to accelerate Transformers. In this paper, we propose C2OPU, a hybrid dual-core processor to accelerate Transformers with hardware and software co-optimization. The dual-core architecture uses CIM arrays to accelerate weight-stationary vector-matrix multiplications, which accounts for the main computation complexity of Transformers. Meanwhile, a coarse-grained reconfigurable architecture (CGRA) is used to address the issues of computing pattern mismatch and low precision of the CIM. In addition, we propose an accuracy-bound workload allocation strategy, which considers non-ideal characteristics in analog computing, to balance throughput and accuracy. Furthermore, C2OPU provides a compiler to automatically determine optimal system configurations when Transformer model changes. Experimental results show that C2OPU achieves an average speedup of 145.41×, 4.73×, 4.70x and 3.85×, and 1.37x compared to CPU, GPU, Science23, Nature23, and VLSI24, respectively, on ten different Transformer models.
   },
   selected = {true},
-  pdf = {2025-05-C2OPU-13EF772C.pdf},
+  pdf = {2025-05-C2OPU.pdf},
   bibtex_show = {true},
   poster = {poster/fccm-c2opu-poster.png},
   linkedin = {https://www.linkedin.com/posts/lingkang-zhu_fccm2025-activity-7325366306147360768-lbZU},
