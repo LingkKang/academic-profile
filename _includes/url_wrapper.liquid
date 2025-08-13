@@ -14,7 +14,7 @@
       {% when 'orcid_id' %}
         <li><a href="https://orcid.org/{{ social[1] }}" title="ORCID"><i class="ai ai-orcid ai-fw icon-pad-right" style="color: rgb(166, 206, 57);"></i>{{ "ORCID" }}</a></li>
       {% when 'research_gate_profile' %}
-        <li><a href="https://researchgate.net/{{ social[1] }}" title="ResearchGate"><i class="ai ai-researchgate icon-pad-right"></i>{{ "ResearchGate" }}</a></li>
+        <li><a href="https://researchgate.net/profile/{{ social[1] }}" title="ResearchGate"><i class="ai ai-researchgate icon-pad-right"></i>{{ "ResearchGate" }}</a></li>
     {% endcase %}
   {% endfor %}
 </ul>
