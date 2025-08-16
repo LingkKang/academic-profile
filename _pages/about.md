@@ -25,6 +25,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an incoming PhD student in Electrical and Electronic Engineering at <a href="https://www.nottingham.edu.cn/en/">The Hong Kong Polytechnic University</a> (PolyU), with research interests in computer architecture and the intersection between software and hardware systems.
+I am an incoming PhD student in Electrical and Electronic Engineering at <a href="https://www.polyu.edu.hk/">The Hong Kong Polytechnic University</a> (PolyU), with research interests in computer architecture and the intersection between software and hardware systems.
 
 Prior to starting my PhD journey, I received a BSc in Computer Science with First Class Honours from the <a href="https://www.nottingham.edu.cn/en/">University of Nottingham Ningbo China</a> (UNNC), where I was also honored as an Outstanding Graduate. During my third undergraduate year, I participated in an exchange program at the <a href="https://www.nottingham.ac.uk/">University of Nottingham</a>, UK.
